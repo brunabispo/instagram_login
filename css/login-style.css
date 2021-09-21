@@ -1,0 +1,63 @@
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 10px 8px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#login {
+    width: 81%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forgot-pass {
+    margin-top: 15px;
+}
+
+.forgot-pass span {
+    text-decoration: none;
+    color: #1c3f57;
+    font-size: 12px;
+}
+
+.or-line {
+    font-weight: bold;
+}
+
+.line-separator {
+    width: 81%; 
+    text-align: center; 
+    border-bottom: 1px solid rgb(175, 171, 171); 
+    line-height: 0.1em;
+    margin: 20px 0 20px;
+}
+
+.line-separator span {
+    background:#fff; 
+    padding:0 10px;
+    color: rgb(145, 140, 140);
+}
+
+.facebook {
+    text-decoration: none;
+    color: #113b57;
+    font-weight: bold;
+}
+
+.go-back span {
+    text-decoration: none;
+    color: #1c3f57;
+    font-size: 10px;
+    margin-top: 15px;
+}

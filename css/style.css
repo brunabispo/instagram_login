@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;  /* y axis */
+    justify-content: start; /* x axis */
+    width: 60%;
+    height: 100vh;
+}
+
+.picture-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.picture-side img {
+    height: 50rem;
+}
+
+.login-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.login-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 7px;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.login-group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3.6rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.login {
+    background-color: #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.wrong-account {
+    color: rgb(107, 103, 103);
+}
+
+.blue-link {
+    color: #0095f6;
+}
+
+.get-app-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.app-download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 10px;
+}
+
+.download-button {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.download-button:nth-child(1) {
+    background-image: url("../assets/app-store.png");
+}
+
+.download-button:nth-child(2) {
+    background-image: url("../assets/google-play.png");
+}
+
+.credit {
+    margin-top: 100px;
+    font-size: 12px;
+}
+
+/* Responsive settings */
+
+@media (max-width: 1170px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 780px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .picture-side {
+        display: none;
+    }
+
+    .login-side {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .picture-side {
+        display: none;
+    }
+
+    .login-side {
+        width: 100%;
+    }
+
+    .download-button {
+        height: 2.65rem;
+        width: 9rem;
+        background-size: cover;
+    }
+}
